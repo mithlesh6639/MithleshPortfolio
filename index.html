@@ -6,6 +6,8 @@
   <meta name="theme-color" content="#101411">
   <meta name="description" content="Portfolio of Mithlesh Rahangdale — Senior Flutter and Mobile Application Developer with 10+ years of experience building scalable mobile products.">
   <title>Mithlesh Rahangdale — Senior Flutter Developer</title>
+  <link rel="icon" type="image/png" href="Professional%20Tech%20Developer%20Portrait.png">
+  <link rel="apple-touch-icon" href="Professional%20Tech%20Developer%20Portrait.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -78,16 +80,7 @@
       gap: 28px;
     }
     .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
-    .brand-mark {
-      display: grid;
-      width: 34px;
-      height: 34px;
-      place-items: center;
-      border: 1px solid rgba(193, 240, 120, .48);
-      border-radius: 10px;
-      color: var(--accent);
-      font: 500 12px var(--mono);
-    }
+    .brand-avatar { width: 36px; height: 36px; border: 1px solid rgba(193, 240, 120, .48); border-radius: 50%; object-fit: cover; }
     .brand-name { font: 700 13px var(--display); letter-spacing: -.02em; }
     .nav-links { display: flex; align-items: center; gap: 30px; }
     .nav-links a { color: var(--muted); font-size: 13px; text-decoration: none; transition: color .2s; }
@@ -234,6 +227,8 @@
     .contact-links svg { width: 16px; height: 16px; color: var(--accent); }
     footer { padding: 25px 0; border-top: 1px solid var(--line); color: var(--muted); font: 10px var(--mono); }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .footer-profile { display: inline-flex; align-items: center; gap: 10px; }
+    .footer-avatar { width: 32px; height: 32px; border: 1px solid rgba(193, 240, 120, .48); border-radius: 50%; object-fit: cover; }
     .footer-inner a { color: var(--muted); text-decoration: none; }
     .footer-inner a:hover { color: var(--accent); }
 
@@ -292,7 +287,7 @@
   <header class="topbar">
     <nav class="nav wrap" aria-label="Main navigation">
       <a class="brand" href="#home" aria-label="Mithlesh Rahangdale, home">
-        <span class="brand-mark">MR</span>
+        <img class="brand-avatar" src="Professional%20Tech%20Developer%20Portrait.png" alt="">
         <span class="brand-name">Mithlesh Rahangdale</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">MENU</button>
@@ -503,7 +498,10 @@
 
   <footer>
     <div class="wrap footer-inner">
-      <span>© <span id="year">2026</span> Mithlesh Rahangdale. Built with care.</span>
+      <span class="footer-profile">
+        <img class="footer-avatar" src="Professional%20Tech%20Developer%20Portrait.png" alt="">
+        <span>© <span id="year">2026</span> Mithlesh Rahangdale. Built with care.</span>
+      </span>
       <a href="#home">Back to top ↑</a>
     </div>
   </footer>
